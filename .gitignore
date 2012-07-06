@@ -1,0 +1,9 @@
+*.pyc
+*~
+.project
+.pydevproject
+.settings/
+.DS_Store
+._*
+db.sqlite
+templates/includes/
