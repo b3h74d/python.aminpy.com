@@ -2,7 +2,7 @@
 import os
 
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_PATH, '../db.sqlite').replace('\\', '/'),
+        'NAME': '/tmp/pythonbook_ir.sqlite',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',

@@ -1,6 +1,6 @@
 body {
 	background-color: #290F1D;
-	color: #902556;
+	color: #8D4163;
 	direction: rtl;
 	font-family: "DejaVu Sans", tahoma, serif;
 	font-size: 10pt;
@@ -112,7 +112,7 @@ pre {
 h1,h2,h3,h4 {
 	font-family: b titr, b koodak;
 	text-align: right;
-	color: #00004B;
+	color: #290F1D;
 	margin-bottom: -10px;
 }
 
@@ -149,7 +149,7 @@ h4.note {
 }
 
 .toc-high {
-	background-color: #FFFF99;
+	background-color: #FFE5FF;
 	border-radius: 10px 10px 10px 10px;
 	height: auto;
 }
@@ -179,7 +179,7 @@ a:link,a:visited {
 }
 
 a.index:link,a.index:visited {
-	color: #335555;
+	color: #2A141E;
 	/* 	font-size: 14px; */
 }
 
@@ -193,7 +193,7 @@ a.content:link,a.content:visited {
 
 a.content:hover {
 	color: #660000;
-	background-color: #FFFF99;
+	background-color: #FFE5FF;
 }
 
 ol {
