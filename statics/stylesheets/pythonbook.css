@@ -1,6 +1,6 @@
 body {
-	background-color: #390F1D;
-	color: orange;
+	background-color: #290F1D;
+	color: #902556;
 	direction: rtl;
 	font-family: "DejaVu Sans", tahoma, serif;
 	font-size: 10pt;
@@ -174,7 +174,7 @@ a {
 }
 
 a:link,a:visited {
-	color: aqua;
+	color: #FFCCC1;
 	font-family: tahoma;
 }
 
@@ -270,7 +270,6 @@ button {
 	padding-top: 5px;
 	direction: ltr;
 	text-align: center;
-	color: #0057AD;
 }
 
 .login-main {
