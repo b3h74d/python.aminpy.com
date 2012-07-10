@@ -60,7 +60,7 @@ TypeError: string indices must be integers
 [/code]
 
 [h3][h3/]
-len
+طول رشته
 [/h3]
 
 [p][p/]
@@ -422,86 +422,86 @@ BANANA
 جستجوی فوق موفق نبود چرا که b در محدوده اندیس 1 تا 2 (نه خود 2) وجود نداشت.
 [/p]
 
-[p][p/]
+[h3][h3/]
+عملگر in
+[/h3]
 
+[p][p/]
+کلمه in یک عملگر boolean می باشد که دو رشته را گرفته و در صورتی که رشته اول 
+زیر رشته یا زیر مجموعه رشته دوم باشد مقدار True بر می گرداند.
+[/p]
+
+[code]
+>>> 'a' in 'banana'
+True
+>>> 'seed' in 'banana'
+False
+[/code]
+
+[p][p/]
+براث مثال، تابع زیر تمام حروف word1 را در صورتی که درون word2 باشد چاپ می کند.
+[/p]
+
+[code]
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print letter
+[/code]
+
+[p][p/]
+در صورتیکه از نام های درست استفاده کنید، پایتون گاهی اوقات مانند زبان انگلیسی 
+خوانده می شود:
+“for (each) letter in (the first) word, if (the) letter (appears) in (the second) word, print (the) letter.”
 [/p]
 
 [p][p/]
-
+در زیر نتیجه مقایسه apples با oranges را با استفاده از تابع نوشته مشاهده می کنید:
 [/p]
 
-[p][p/]
+[code]
+>>> in_both('apples', 'oranges')
+a
+e
+s
+[/code]
 
+[h3][h3/]
+مقایسه رشته ها
+[/h3]
+
+[p][p/]
+عملگرهای انتسابی برای رشته ها استفاده می شوند. مقایسه این که آیا دو رشته با هم مساوی هستند:
 [/p]
 
-[p][p/]
+[code]
+if word == 'banana':
+    print 'All right, bananas.'
+[/code]
 
+[p][p/]
+عملگرهای انتسابی دیگر برای قرار دادن لغات به ترتبی حروف الفبا کاربرد خواهند داشت:
 [/p]
 
-[p][p/]
+[code]
+if word < 'banana':
+    print 'Your word,' + word + ', comes before banana.'
+elif word > 'banana':
+    print 'Your word,' + word + ', comes after banana.'
+else:
+    print 'All right, bananas.'
+[/code]
 
+[p][p/]
+پایتون حروف بزرگ و کوچک را به همان روشی که در دنیای واقعی ما از آستفاده می کنیم، ‌کنترل نمی کند. 
+تمامی حروف بزرگ قبل از حروف کوچک می آیند، ‌بنابراین:
 [/p]
 
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
+[code]
+Your word, Pineapple, comes before banana.
+[/code]
 
 [p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
-[/p]
-
-[p][p/]
-
+رایج ترین روش برای درست کردن این مشکل این است که، قبل از انجام عمل مقایسه، 
+رشته ها را به حروف کوچک تبدیل کنیم.
 [/p]
