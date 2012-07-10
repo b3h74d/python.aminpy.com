@@ -8,3 +8,4 @@
 db.sqlite
 templates/includes/
 static/
+*.fodt#
