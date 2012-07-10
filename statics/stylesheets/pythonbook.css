@@ -297,3 +297,13 @@ button {
 .login_input {
 	margin-bottom: 5px
 }
+
+.incomplete {
+	padding-right: 20px;
+	color: red;
+}
+
+.incomplete-left {
+	padding-left: 20px;
+	color: red;
+}

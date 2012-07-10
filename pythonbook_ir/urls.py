@@ -10,10 +10,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^$', views.index),
     (r'^', include("contactus.urls")),
-    (r'^toc/$', views.toc),
-    (r'^aboutbook/$', views.about_book),
+    (r'^pythonbook/$', views.toc),
+    (r'^aboutpythonbook/$', views.about_book),
     (r'^admin/', include(admin.site.urls)),
-    (r'^chapter(?P<number>\d\d)/$', views.controller),
+    (r'^pythonbook(?P<number>\d\d)/$', views.controller),
 )
 
 if settings.DEBUG:
