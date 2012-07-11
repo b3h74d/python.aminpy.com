@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>lxsameer </meta:initial-creator><meta:creation-date>2012-07-08T21:10:44</meta:creation-date><meta:generator>LibreOffice/3.5$Linux_X86_64 LibreOffice_project/350m1$Build-2</meta:generator><dc:date>2012-07-10T16:11:44</dc:date><dc:creator>lxsameer </dc:creator><meta:editing-duration>PT6M16S</meta:editing-duration><meta:editing-cycles>3</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="9" meta:word-count="177" meta:character-count="912" meta:non-whitespace-character-count="736"/></office:meta>
+ <office:meta><meta:initial-creator>lxsameer </meta:initial-creator><meta:creation-date>2012-07-08T21:10:44</meta:creation-date><meta:generator>LibreOffice/3.5$Linux_X86_64 LibreOffice_project/350m1$Build-2</meta:generator><dc:date>2012-07-11T21:53:32</dc:date><dc:creator>lxsameer </dc:creator><meta:editing-duration>PT22M25S</meta:editing-duration><meta:editing-cycles>6</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="13" meta:word-count="281" meta:character-count="1470" meta:non-whitespace-character-count="1181"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">1270</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">11218</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">41118</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">18628</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">29351</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">15265</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">26379</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">22086</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">1270</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">11218</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">41116</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">19897</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">29845</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -239,20 +239,46 @@
    <style:text-properties style:font-name="Courier 10 Pitch"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="end" style:justify-single-word="false" style:writing-mode="rl-tb"/>
-   <style:text-properties style:font-name="Courier 10 Pitch"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
    <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="end" style:justify-single-word="false" fo:background-color="#cccccc" style:writing-mode="rl-tb">
     <style:background-image/>
    </style:paragraph-properties>
    <style:text-properties style:font-name="Courier 10 Pitch"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
    <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="end" style:justify-single-word="false" fo:background-color="transparent" style:writing-mode="rl-tb">
     <style:background-image/>
    </style:paragraph-properties>
    <style:text-properties style:font-name="Courier 10 Pitch"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="Nazanin"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="end" style:justify-single-word="false" fo:background-color="transparent" style:writing-mode="rl-tb">
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties style:font-name="Courier 10 Pitch"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="start" style:justify-single-word="false" fo:background-color="transparent" style:writing-mode="lr-tb">
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties style:font-name="Courier 10 Pitch"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in"/>
+   <style:text-properties style:font-name="Courier 10 Pitch"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1965in" fo:text-align="start" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="Courier 10 Pitch"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="8.5in" fo:page-height="11in" style:num-format="1" style:print-orientation="portrait" fo:margin="0.7874in" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:footnote-max-height="0in">
@@ -281,12 +307,17 @@
    <text:p text:style-name="P1"/>
    <text:p text:style-name="P1">تعریف تابع، مشخص کردن عملیات آن است. در پایتون تعریف تابع به شکل زیر است.</text:p>
    <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"/>
    <text:p text:style-name="P4">def NAME( LIST OF PARAMETERS ):</text:p>
    <text:p text:style-name="P5"><text:s text:c="4"/>STATEMENTS</text:p>
-   <text:p text:style-name="P6">شما هر نامی را یرای یک تابع می‌توانید انتخاب کنید ب جز اسم‌هایی که از کلمات کلیدی پایتون مانند for و class باشند.قسمت پارامتر ها (LIST OF PARAMETERS) به منظور مشخص کردن داده‌ها و پارامتر هایی است که برای استفاده از تابع به آن‌ها نیاز خواهد بود.</text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P6">شما هر نامی را یرای یک تابع می‌توانید انتخاب کنید ب جز اسم‌هایی که از کلمات کلیدی پایتون مانند for و class باشند.قسمت پارامتر ها (LIST OF PARAMETERS) به منظور مشخص کردن داده‌ها و پارامتر هایی است که برای استفاده از تابع به آن‌ها نیاز خواهد بود. در این قسمت شما می‌توانید به نعدادی که نیاز است پارامتر وردی تعریف کنید، همچنین می‌توانید این قسمت را خالی گذاشته و از پارامتری استفاده نکنید. اما دز هز صورت پرانتز ها اجباری هستند.</text:p>
    <text:p text:style-name="P6">در تعریف تابع محدودیتی در تعداد عبارات (STATEMENTS) وجود ندارد تنها نکته‌ای که باید به آن توجه شود، فاصله (indent) عبارات از کلمه کلیدی def است.</text:p>
-   <text:p text:style-name="P8">نکنه: <text:s/>همان‌طور که در فصل پیش <text:s/>به آن اشاره شد بلاک های کد در پایتون به وسیله فاصله ی عبارات از سر خط مشخص می شوند. </text:p>
-   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P7">نکنه: <text:s/>همان‌طور که در فصل پیش <text:s/>به آن اشاره شد بلاک های کد در پایتون به وسیله فاصله ی عبارات از سر خط مشخص می شوند. </text:p>
+   <text:p text:style-name="P8">اجازه دهید با چند مثال ادامه دهیم.</text:p>
+   <text:p text:style-name="P11">def new_line():</text:p>
+   <text:p text:style-name="P13"><text:s text:c="4"/>print <text:s text:c="9"/># a print statement with no arguments prints a new line</text:p>
+   <text:p text:style-name="P8">همانطور که از تعریف تابع مشخص است اسم این تابع new_line می‌باشد. پرانتز های خالی نشان دهنده عدم وجود هیچگونه پارامتر ورودی برای این تابع می‌باشد و تنها عبارت این تابع، عبارت print است (عبارت print خالی تنها یک کاراکتر <text:span text:style-name="T1">خط جدید</text:span> &apos;n\&apos; را در خروجی درج خواهد کرد)</text:p>
   </office:text>
  </office:body>
 </office:document>
