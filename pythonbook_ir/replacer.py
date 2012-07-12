@@ -136,9 +136,9 @@ def replacer():
             matn = matn.replace("[چ]", "<span dir='ltr'>")
             matn = matn.replace("[/چ]", "</span>")
 
-            matn = matn.replace("[a]", "<a ")
-            matn = matn.replace("[a/]", ">")
-            matn = matn.replace("[/a]", "</a>")
+            matn = matn.replace("[ل]", "<a ")
+            matn = matn.replace("[ل/]", ">")
+            matn = matn.replace("[/ل]", "</a>")
 
             matn = matn.replace("[code]", python_code)
             matn = matn.replace("[code python]", python_code)
