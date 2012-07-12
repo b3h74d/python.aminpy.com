@@ -357,7 +357,7 @@ for key in db:
 >>> db.close()
 [/code]
 
-[h3][h3/
+[h3][h3/]
 Pickling
 [/h3]
 
