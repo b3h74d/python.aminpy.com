@@ -127,8 +127,14 @@ def replacer():
             matn = matn.replace("[table/]", ">")
             matn = matn.replace("[/table]", "</table>")
 
-            matn = matn.replace("[چپ]", "<span dir='ltr'>")
-            matn = matn.replace("[/چپ]", "</span>")
+            matn = matn.replace("[ب]", "<b>")
+            matn = matn.replace("[/ب]", "</b>")
+            
+            matn = matn.replace("[ک]", "<i>")
+            matn = matn.replace("[/ک]", "</i>")
+
+            matn = matn.replace("[چ]", "<span dir='ltr'>")
+            matn = matn.replace("[/چ]", "</span>")
 
             matn = matn.replace("[a]", "<a ")
             matn = matn.replace("[a/]", ">")
