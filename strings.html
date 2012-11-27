@@ -1,0 +1,611 @@
+
+<html>
+<head>
+<title>مبحث رشته در پایتون</title>
+<meta name="google-site-verification" content="_n5bYVtSMu-h5rCV2Uixj98pliCE6YSJpo-Mms3v0kg" />
+<meta name="keywords" content="python, book, string, sequence, len, slice, پایتون, کتاب, آموزش, رشته" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="fa" />
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/statics/stylesheets/pythonbook.css"
+				type="text/css" />
+</head>
+
+<body>
+	<div class='main'>
+		<div class="top">
+			
+				<a href="/" class="top">صفحه اصلی</a>
+			
+			 | 
+			
+				<a href="/toc.html" class="top">فهرست مطالب</a>
+			
+			 | 
+
+			
+				<a href="/about_book.html" class="top">درباره کتاب</a>
+			
+			 | 
+
+			
+				<a href="http://aminpy.com/" class="top">تماس با ما</a>
+			
+		</div>
+		
+		
+    <div class='phn'>
+        <div style="text-align: center; float: left;">
+        
+            بعدی
+        
+        </div>
+        <div style="color: #487858; float: left; padding-right: 10px; padding-left: 10px">◊</div>
+        <div style="float: left; text-align: center"><a href='toc.html'>فهرست مطالب</a></div>
+        <div style="color: #487858; float: left; padding-right: 10px; padding-left: 10px">◊</div>
+        <div style="text-align: center">
+        
+            قبلی
+        
+        </div>
+    </div>
+
+
+		<div style="padding-bottom: 20px; padding-top: 10px;">
+			<a href="http://www.pythonbook.ir/">
+			<h1 style='color: white;'>کتاب پایتون</h1>
+		</a></div>
+
+		
+		<div class="aval">
+			
+<h2 >
+رشته ها
+</h2>
+
+<h3 >
+رشته یک ترتیب است
+</h3>
+
+<p >
+رشته ترتیبی از کارکترها می باشد. شما می توانید با استفاده از علامت کروشه به کارکترهای 
+درون رشته دسترسی پیدا کنید:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; fruit = 'banana'
+&gt;&gt;&gt; letter = fruit[1]
+</pre>
+
+<p >
+خط دوم مثال فوق کارکتر اول fruit را انتخاب کرده و آن را درون letter می ریزد.
+</p>
+
+<p >
+عبارت درون کروشه را اندیس می نامند. اندیس به کاراکترهای درون یک ترتیب اشاره می کند.
+</p>
+
+<p >
+ولی ممکن است چیزی را انتظار خواهید داشت را دریافت نکنید:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; print letter
+a
+</pre>
+
+<p >
+برای اکثر افراد، اولین حرف از کلمه 'banana' حرف b می باشد، نه حرف a.
+ولی در علوم کامپیوتر اندیس اولین قسمت از رشته می باشد، و اولین قسمت صفر می باشد.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; letter = fruit[0]
+&gt;&gt;&gt; print letter
+b
+</pre>
+
+<p >
+بنابراین شاید بتوان به حالت طنز گفت که b صفرومین حرف 'banana' می باشد، 
+a اولین و n نیز دومین حرف آن می باشد.
+</p>
+
+<p >
+شما می توانید برای اندیس از هر عبارتی، شال متغیرها و عملگرهای استفاده کنید، 
+ولی باید بخاطر داشت مقدار اندیس باید یک integer باشد، در غیر این صورت شما خطای زیر را دریافت خواهید کرد:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; letter = fruit[1.5]
+TypeError: string indices must be integers
+</pre>
+
+<h3 >
+طول رشته
+</h3>
+
+<p >
+len یک تابع داخلی پایتون می باشد که تعداد کاراکترهای موجود در یک رشته را بر می گرداند.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; fruit = 'banana'
+&gt;&gt;&gt; len(fruit)
+6
+</pre>
+
+<p >
+برای بدست آوردن آخرین حرف یک رشته، شما ممکن است همچین کاری را انجام دهید:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; length = len(fruit)
+&gt;&gt;&gt; last = fruit[length]
+IndexError: string index out of range
+</pre>
+
+<p >
+دلیل خطای فوق این است که هیچ در 'banana' با اندیس 6 وجود ندارد. به این دلیل که ما 
+شمارش را از صفر شروع کردیم 6 حرف مورد نظر از 0 تا 5 شماره گذاری شده اند.
+برای بدست آوردن آخرین کاراکتر، شما باید یک واحد از lenght کم کنید.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; last = fruit[length-1]
+&gt;&gt;&gt; print last
+a
+</pre>
+
+<p >
+همچنین شما می توانید از اندیس های منفی استفاده کنید، که به صورت بر عکس، یعنی 
+از ابتدا به انتها رشته را شمارش می کند. عبارت fruit[-1] نشان دهنده اندیس آخر، 
+fruit[-2] نشان دهنده اندیس یکی مانده به آخر می باشد و الی آخر ...
+</p>
+
+<h3 >
+پیمایش با حلقه for
+</h3>
+
+<p >
+بسیاری از محاسبات نیاز به پردازش رشته دارند به طوری بتوانند در هربار یکی از کاراکترهای 
+رشته را در اختیار داشته باشند و به نوبت هر کاراکتر را انتخاب کرده و کاری را روی آن 
+انجام دهند و این موضوع را تا پایان رشته ادامه دهند. این الگوی پردازش پیمایش نام دارد. 
+یکی از راه های نوشتن پیمایش استفاده از حلقه while می باشد:
+</p>
+
+<pre class="brush: py">
+index = 0
+while index &lt; len(fruit):
+    letter = fruit[index]
+    print letter
+    index = index + 1
+</pre>
+
+<p >
+این حلقه رشته را پیمایش کره و حروف داخل رشته را جدا جدا نمایش می دهد. شرط حلقه 
+index &lt; len(fruit) می باشد، بنابراین زمانی که index برابر با طول رشته شود، شرط 
+False می شود، و بدنه حلقه دیگر اجرا نخواهد شد. آخرین کاراکتر مورد دسترسی اندیس 
+len(fruti) - 1 می باشد، که آخرین کاراکتر رشته خواهد بود.
+</p>
+
+<h4 >
+تمرین 1
+</h4>
+
+<p >
+تابعی بنویسید که یک رشته را به عنوان آرگومان دریافت کرده و حروف آن را به صورت وارونه 
+نمایش دهد.
+</p>
+
+<p >
+روش دیگر نوشتن یک پیمایش با استفاده از حلقه for می باشد:
+</p>
+
+<pre class="brush: py">
+for char in fruit:
+    print char
+</pre>
+
+<p >
+هر بار درون حلقه، کاراکتر بعدی درون رشته به متغیر char نسبت داده می شود. 
+حلقه تا جایی ادامه پیدا می کند که دیگر هیچ کارکتری درون رشته باقی نماند.
+</p>
+
+<p >
+مثال زیر نحوه استفاده از به هم متصل کردن رشته و یک حلقه for برای تولید یک سری حروف
+به ترتیب حروف الفبا را نشان می دهد. در کتاب make Way for Ducklings اثر Robert McCloskey 
+نام جوجه اردک ها Jack، Kack، Lack، Mak، Nack، Ouack، Pack و Ouack می باشد، 
+خروجی حلقه زیر این نام ها را به ترتیب چاپ می کند.
+</p>
+
+<pre class="brush: py">
+prefixes = 'JKLMNOPQ'
+suffix = 'ack'
+
+for letter in prefixes:
+    print letter + suffix
+The output is:
+Jack
+Kack
+Lack
+Mack
+Nack
+Oack
+Pack
+Qack
+</pre>
+
+<p >
+البته، خروجی به طور کامل صحیح نیست، "Oauck" و "Quack" از نظر املایی غلط می باشند.
+</p>
+
+<h4 >
+تمرین 2
+</h4>
+
+<p >
+کد فوق را جهت رفع مشکل اصلاح کنید.
+</p>
+
+<h3 >
+برش های رشته
+</h3>
+
+<p >
+یک بند از یک رشته را یک برش می گویند. انتخاب یک برش، دقیقا انتخاب یک کاراکتر است.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; s = 'Monty Python'
+&gt;&gt;&gt; print s[0:5]
+Monty
+&gt;&gt;&gt; print s[6:12]
+Python
+</pre>
+
+<p >
+عملگر [n:m] بخشی از رشته یعنی رشته را از کاراکتر n تا بر می گرداند، که شامل اولین برش 
+یعنی عدد n می شود، ولی شامل m نمی شود. این رفتار کمی عجیب به نظر می رشد، 
+ولی ممکن است همانطور که در تصویر 8-1 مشاهده می کنید به این تصور کمک کند که نقطه اندیس بین کارکترها می باشد.
+</p>
+
+
+<table class='note'>
+    <tr>
+        <td>
+            <img src='/statics/images/pic.png' width='40' height='40' />
+        </td>
+        <td valign='middle' width='95%'><h4>
+شکل 1-8</h4></td></tr><tr><td colspan='2'>
+<img src='/statics/images/8-1.png' width='100%'>
+</td></tr></table>
+
+<p >
+در صورتیکه اندیس اول (قبل از : را) از قلم بیاندازید، برش از ابتدا رشته شروع می کند و 
+همچنین در صورتیکه اندیس دوم را از قلم بیاندازید، برش تا انتهای رشته ادامه پیدا می کند.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; fruit = 'banana'
+&gt;&gt;&gt; fruit[:3]
+'ban'
+&gt;&gt;&gt; fruit[3:]
+'ana'
+</pre>
+
+<p >
+در صورتیکه اندیس اول بزرگتر یا مساوی اندیس دوم باشد، نتیجه یک رشته خالی خواهد بود که درون 
+علامت کتیشن قرار خواهد گرفت.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; fruit = 'banana'
+&gt;&gt;&gt; fruit[3:3]
+''
+</pre>
+
+<p >
+یک رشته خالی حاوی هیچ کارکتری نبوده و طول آن 0 می باشد، ولی با این حال مانند باقی رشته ها خواهد بود.
+</p>
+
+<h3 >
+رشته ها تغییر ناپذیر هستند
+</h3>
+
+<p >
+به نظر وسوسه انگیز می رسد به منظور تغییر یک کاراکتر در رشته از عملگر [] در سمت چپ یک انتساب استفاده کرد 
+برای مثال:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; greeting = 'Hello, world!'
+&gt;&gt;&gt; greeting[0] = 'J'
+TypeError: object does not support item assignment
+</pre>
+
+<p >
+"object" در مثال فوق رشته و "item" کارکتری است که انتساب داده شده است. 
+فعلا یک آبجکت همان مقدار می باشد، ولی بعدا آبجکت را به تفصیل توضیح خواهیم داد. item 
+یکی از مقادیر موجود در ترتیب (sequence) می باشد.
+</p>
+
+<p >
+دلیل خطای فوق این که است که رشته تغییر ناپذیر است، بدین معنی که نمی توان یک رشته موجود 
+را تغییر داد. بهترین راهکار استفاده از یک رشته جدید است.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; greeting = 'Hello, world!'
+&gt;&gt;&gt; new_greeting = 'J' + greeting[1:]
+&gt;&gt;&gt; print new_greeting
+Jello, world!
+</pre>
+
+<p >
+مثال فوق یک حرف جدید را به عنوان اولین حرف به برش greeting متصل می کند. انتساب فوق 
+هیچ تاثیری بر رشته اصلی ندارد.
+</p>
+
+<h3 >
+جستجو کردن
+</h3>
+
+<p >
+تابع زیر چه کاری انجام می دهد؟
+</p>
+
+<pre class="brush: py">
+def find(word, letter):
+    index = 0
+    while index &lt; len(word):
+        if word[index] == letter:
+            return index
+        index = index + 1
+    return -1
+</pre>
+
+<p >
+در یک معنا، تابع فوق نقطه مقابل عملگر [] می باشد، بدین معنی که، به جای اینکه یک اندیس را 
+گرفته و کاراکتر مرتبط با آن را بر گرداند، یک کاراکتر را گرفته و اندیس مربوط به کاراکتر را بر 
+می گرداند. در صورتیکه کاراکتر مورد نظر پیدا نشود تابع -1 بر می گرداند.
+</p>
+
+<p >
+این اولین مثالی است که جمله return درون حلقه قرار گرفته است. در صورتیکه 
+word[index] == letter باشد، تابع حلقه را شکسته و به سرعت برگردانده می شود.
+</p>
+
+<p >
+در صورتیکه کاراکتر در رشته وجود نداشته باشد، برنامه به طور عادی از حلقه خارج شده و -1 را بر می گرداند.
+</p>
+
+<p >
+این توع الگوی محاسبه یعنی: پیمایش یک ترتیب و برگرداندن، هنگامی که چیزی که به دنبالش می باشیم را پیدا کردیم را 
+جستجو می نامند.
+</p>
+
+<h3 >
+استفاده از حلقه و شمارشگر
+</h3>
+
+<p >
+برنامه زیر تعداد کاراکتر a موجود در رشته را حساب می کند.
+</p>
+
+<pre class="brush: py">
+word = 'banana'
+count = 0
+for letter in word:
+    if letter == 'a':
+        count = count + 1
+print count
+</pre>
+
+<p >
+برنامه فوق الگوی محاسبه دیگری را نشان می دهد که شمارشگر نام دارد. متغیر count 
+با مقدار اولیه 0 ایجاد شده و هر بار که کاراتر a در رشته یافت می شود 
+یک واحد به آن اضافه می گردد. زمانی که حلقه خارج شود، متغیر count حاوی نتیجه خواهد بود 
+یعنی تعداد a های موجود در رشته.
+</p>
+
+<h3 >
+متدهای رشته
+</h3>
+
+<p >
+یک متد چیزی شبیه به تابع می باشد، بدین معنی که آرگون هایی را دریافت کرده و یک مقدار بر می گرداند، 
+ولی در syntax با یکدیگر متفاوت هستند. برای مثال. برای مثال، متد upper یک رشته را 
+دریافت کرده و یک رشته جدید بر می گرداند که در آن تمامی حروف به حروف بزرگ تبدیل شده اند.
+</p>
+
+<p >
+به جای استفاده از یک تابع به عنوان مثال upper(word)، در مثال زیر از syntax متد استفاده شده است: word.upper().
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; word = 'banana'
+&gt;&gt;&gt; new_word = word.upper()
+&gt;&gt;&gt; print new_word
+BANANA
+</pre>
+
+<p >
+این حالت از نقطه گذاری نام متد را مشخص می کند، که upper می باشد، و نام رشته ای که متد 
+بر روی آن اجرا می شود word می باشد. پرانتزهای خالی نشانگر این هستند که متد هیچ آرگومانی 
+دریافت نمی کند.
+</p>
+
+<p >
+اینگونه استفاده از متد را فراخوانی می نامند؛ در مورد فوق، خواهیم گفت که، ما در حال فراخوانی upper 
+در word می باشیم.
+</p>
+
+<p >
+همانطور که معلوم است، یک متد رشته با نام find وجود دارد که به طور قابل ملاحظه ای شبیه به 
+تابعی است که پیش از این نوشتیم:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; word = 'banana'
+&gt;&gt;&gt; index = word.find('a')
+&gt;&gt;&gt; print index
+1
+</pre>
+
+<p >
+در مثال فوق، ما متد find را فراخوانی کرده و حرف مورد نظر خود را به عنوان پارامتر به آن 
+ارسال کردیم.
+</p>
+
+<p >
+در واقع، متد find کلی تر از تابعی است که ما قبلا نوشتیم، این متد نه تنها می تواند کاراکتر را پیدا کند، بلکه زیر رشته ها را نیز 
+پیدا می کند:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; word.find('na')
+2
+</pre>
+
+<p >
+همچنین متد فوق یک آرگومان دیگر نیز دریافت می کند که مشخص می کند جستجو از کدام اندیس شروع شود:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; word.find('na', 3)
+4
+</pre>
+
+<p >
+بعلاوه آرگومان سوم که مشخص می کند جستجو در کدام اندیس پایان یابد:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; name = 'bob'
+&gt;&gt;&gt; name.find('b', 1, 2)
+-1
+</pre>
+
+<p >
+جستجوی فوق موفق نبود چرا که b در محدوده اندیس 1 تا 2 (نه خود 2) وجود نداشت.
+</p>
+
+<h3 >
+عملگر in
+</h3>
+
+<p >
+کلمه in یک عملگر boolean می باشد که دو رشته را گرفته و در صورتی که رشته اول 
+زیر رشته یا زیر مجموعه رشته دوم باشد مقدار True بر می گرداند.
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; 'a' in 'banana'
+True
+&gt;&gt;&gt; 'seed' in 'banana'
+False
+</pre>
+
+<p >
+براث مثال، تابع زیر تمام حروف word1 را در صورتی که درون word2 باشد چاپ می کند.
+</p>
+
+<pre class="brush: py">
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print letter
+</pre>
+
+<p >
+در صورتیکه از نام های درست استفاده کنید، پایتون گاهی اوقات مانند زبان انگلیسی 
+خوانده می شود:
+“for (each) letter in (the first) word, if (the) letter (appears) in (the second) word, print (the) letter.”
+</p>
+
+<p >
+در زیر نتیجه مقایسه apples با oranges را با استفاده از تابع نوشته مشاهده می کنید:
+</p>
+
+<pre class="brush: py">
+&gt;&gt;&gt; in_both('apples', 'oranges')
+a
+e
+s
+</pre>
+
+<h3 >
+مقایسه رشته ها
+</h3>
+
+<p >
+عملگرهای انتسابی برای رشته ها استفاده می شوند. مقایسه این که آیا دو رشته با هم مساوی هستند:
+</p>
+
+<pre class="brush: py">
+if word == 'banana':
+    print 'All right, bananas.'
+</pre>
+
+<p >
+عملگرهای انتسابی دیگر برای قرار دادن لغات به ترتبی حروف الفبا کاربرد خواهند داشت:
+</p>
+
+<pre class="brush: py">
+if word &lt; 'banana':
+    print 'Your word,' + word + ', comes before banana.'
+elif word &gt; 'banana':
+    print 'Your word,' + word + ', comes after banana.'
+else:
+    print 'All right, bananas.'
+</pre>
+
+<p >
+پایتون حروف بزرگ و کوچک را به همان روشی که در دنیای واقعی ما از آستفاده می کنیم، ‌کنترل نمی کند. 
+تمامی حروف بزرگ قبل از حروف کوچک می آیند، ‌بنابراین:
+</p>
+
+<pre class="brush: py">
+Your word, Pineapple, comes before banana.
+</pre>
+
+<p >
+رایج ترین روش برای درست کردن این مشکل این است که، قبل از انجام عمل مقایسه، 
+رشته ها را به حروف کوچک تبدیل کنیم.
+</p>
+
+
+		</div>
+		
+
+			<div class="footer">
+This work is licensed under the GNU Free Document License
+                                <br />
+                                Copyright © 2012 - <a href="http://aminpy.com">Amin Oruji</a>
+				
+    <div class='phn1'>
+        <div style="text-align: center; float: left;">
+        
+            بعدی
+        
+        </div>
+        <div style="color: #487858; float: left; padding-right: 10px; padding-left: 10px">◊</div>
+        <div style="float: left; text-align: center"><a href='toc.html'>فهرست مطالب</a></div>
+        <div style="color: #487858; float: left; padding-right: 10px; padding-left: 10px">◊</div>
+        <div style="text-align: center">
+        
+            قبلی
+        
+        </div>
+    </div>
+
+			</div>
+<!-- Begin WebGozar.com Counter code -->
+<script type="text/javascript" language="javascript" src="http://www.webgozar.ir/c.aspx?Code=2715278&amp;t=counter" ></script>
+<noscript><a href="http://www.webgozar.com/counter/stats.aspx?code=2715278" target="_blank">&#1570;&#1605;&#1575;&#1585;</a></noscript>
+<!-- End WebGozar.com Counter code -->
+	</div>
+</body>
+</html>
+
